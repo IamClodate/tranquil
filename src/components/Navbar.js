@@ -8,7 +8,11 @@ import { navItems } from "./NavItems.js";
 function Navbar() {
   return (
     <>
-        <nav className="navbar"></>    
+        <nav className="navbar">
+            <Link to="/" className="navbar-logo">
+                <Icons.FaPiedPiper />
+            </Link>
+        </nav>    
     </>
   );
 }
