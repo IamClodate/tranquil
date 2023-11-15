@@ -13,6 +13,18 @@ function Navbar() {
                 <Icons.FaPiedPiper />
                 PIPER
             </Link>
+            <ul className="nav-items">
+                {navItems.map(item => {
+                    return (
+                    <li key={item.id} className={item.nName}>
+                        <Link to={item.path}>
+                            {item.icon}
+                            <span>{item.title}</span>
+                        </Link>
+                    </li>
+                    );
+                })}
+            </ul>
         </nav>    
     </>
   );
