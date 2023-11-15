@@ -3,8 +3,7 @@ import {
     Nav, 
     NavLink, 
     Bars, 
-    NavMenu, 
-    NavLink, 
+    NavMenu,
     NavBtn, 
     NavBtnLink
 } from './NavbarElements';

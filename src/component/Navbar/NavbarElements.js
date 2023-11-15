@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { NavLink as Link, NavLink } from 'react-router-dom'
+import { NavLink as Link, } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 
 export const Nav = styled.nav`
@@ -70,6 +70,8 @@ export const NavBtnLink = styled(Link)`
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color:010606;
     }
 `
