@@ -9,4 +9,4 @@ function Button() {
   )
 }
 
-export default ButLink {}
+export default Button;
