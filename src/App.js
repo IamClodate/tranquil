@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import "./styles.css";
 
-import Navbar from './component/Navbar';
+import Navbar from './components/Navbar';
 import { Router } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
