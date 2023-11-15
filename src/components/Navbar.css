@@ -15,7 +15,7 @@
     width: 9rem;
     justify-content: space-between;
 }
-.nav-items {
+.nav-item {
     width: 65vw;
     display:flex;
     justify-content: flex-end;
@@ -26,7 +26,7 @@
     margin-left: 2rem;
 }
 
-.nav-items a {
+.nav-item a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.2rem;
@@ -38,6 +38,11 @@
     transition: 0.2s all ease-out;
 }
 
-.nav-items a:hover {
+.nav-item a:hover {
     background: tomato;
+}
+
+.nav-item a span {
+    margin-left: 0.7rem;
+    font-size: 1.3rem;
 }
