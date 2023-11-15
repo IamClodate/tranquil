@@ -11,6 +11,7 @@ function Navbar() {
         <nav className="navbar">
             <Link to="/" className="navbar-logo">
                 <Icons.FaPiedPiper />
+                PIPER
             </Link>
         </nav>    
     </>
