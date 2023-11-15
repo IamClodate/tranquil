@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar />
         <Switch>
           <Route></Route>
         </Switch>

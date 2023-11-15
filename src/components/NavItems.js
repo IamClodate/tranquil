@@ -31,7 +31,7 @@ export const navItems = [
         path: "./tours",
         nName: "nav-item",
         sName: "sidebar-item",
-        icon: <Icons.FaHome />+
+        icon: <Icons.FaHome />
     },
     {
         id: 5,
@@ -51,8 +51,8 @@ export const navItems = [
     },
     {
         id: 7,
-        title: "Home",
-        path: "./",
+        title: "Sign",
+        path: "./sign",
         nName: "nav-item",
         sName: "sidebar-item",
         icon: <Icons.FaHome />
