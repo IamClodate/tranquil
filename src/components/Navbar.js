@@ -75,7 +75,7 @@ function Navbar() {
             <ul className="sidebar-items">
                     {navItems.map((item )=> {
                         return (
-                        <li key={item.id} className={item.sName}>
+                        <li key={item.id} className={item.sName} onClick={() => setSidebar(false)}>
                             <Link to={item.path}>
                                 {item.icon}
                                 <span>{item.title}</span>
@@ -84,7 +84,7 @@ function Navbar() {
                         );
                     })}
             </ul>
-            <Button />
+            <Button onClick={() => setSidebar(false)}/>
         </div>   
     </>
   );
