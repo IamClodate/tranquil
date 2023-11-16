@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.navbar-logo {
+.navbar-Logo {
     color: whitesmoke;
     text-decoration: none;
     font-size: 2.3rem;
@@ -39,7 +39,7 @@
 }
 
 .nav-item a:hover {
-    background: tomato;
+    background: green;
 }
 
 .nav-item a span {

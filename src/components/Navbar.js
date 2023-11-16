@@ -25,6 +25,7 @@ function Navbar() {
                     );
                 })}
             </ul>
+            <Button />
         </nav>    
     </>
   );
