@@ -32,9 +32,9 @@ function Navbar() {
                 <Icons.FaPiedPiper />
                 Tranquil
             </Link>
-            {!mobile &&(
+            {!mobile && (
                 <ul className="nav-items">
-                {navItems.map(item => {
+                {navItems.map((item )=> {
                     return (
                     <li key={item.id} className={item.nName}>
                         <Link to={item.path}>
@@ -53,15 +53,31 @@ function Navbar() {
                 <div className="sidebar-toggle">
                     {sidebar ? (
                         <Icons.FaTimes className="sidebar-toggle-logo"
-                        onClick={() => setSidebar(!sidebar)} />
+                        onClick={() => setSidebar(!sidebar)} 
+                        />
                     ) : (
-                        <Icons.FaBars className="sidebar-toggle-logo" onClick={() => setSidebar(!sidebar)}/>
-                    )}
+                        <Icons.FaBars className="sidebar-toggle-logo" 
+                        onClick={() => setSidebar(!sidebar)}
+                        />
+                     )}
                     </div>
-                    )}
-                </div>
-            )}
-        </nav>    
+                )}
+        </nav> 
+
+        <div className="sidebar">
+            <ul className="nav-items">
+                    {navItems.map((item )=> {
+                        return (
+                        <li key={item.id} className={item.sName}>
+                            <Link to={item.path}>
+                                {item.icon}
+                                <span>{item.title}</span>
+                            </Link>
+                        </li>
+                        );
+                    })}
+            </ul>
+        </div>   
     </>
   );
 }
