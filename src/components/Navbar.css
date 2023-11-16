@@ -110,3 +110,13 @@
     margin-top: 2.4rem;
     width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+     .sidebar.active {
+        width: 5rem;
+     }
+
+     .sidebar-item a span {
+        display: none;
+     }
+}

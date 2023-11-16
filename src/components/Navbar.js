@@ -8,7 +8,13 @@ import { navItems } from "./NavItems.js";
 function Navbar() {
    const [mobile, setMobile] = useState(false);
    const [sidebar, setSidebar] = useState(false)
-    
+     
+    useEffect(() => {
+        if (window.innerWidth <1065) {
+            setMobile(true);
+        }
+    },[]);
+
    useEffect(() => {
     const handleResize = () => {
         if(window.innerWidth < 1065) {
