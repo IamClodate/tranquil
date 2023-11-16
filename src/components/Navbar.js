@@ -77,6 +77,7 @@ function Navbar() {
                         );
                     })}
             </ul>
+            <Button />
         </div>   
     </>
   );
