@@ -46,3 +46,14 @@
     margin-left: 0.7rem;
     font-size: 1.3rem;
 }
+
+.sidebar-toggle-logo {
+    width: 65vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar-toggle-logo {
+    font-size: 2rem;
+    color: white;
+}

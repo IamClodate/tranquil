@@ -7,6 +7,7 @@ import { navItems } from "./NavItems.js";
 
 function Navbar() {
    const [mobile, setMobile] = useState(false);
+   const [sidebar, setSidebar] = useState(false)
     
    useEffect(() => {
     const handleResize = () => {
@@ -17,8 +18,11 @@ function Navbar() {
         }
     }
 
-    window.addEventListener("resize",handleResize)
-   }, [])
+    window.addEventListener("resize",handleResize);
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+   }, []);
 
 
   return (
@@ -43,6 +47,20 @@ function Navbar() {
                 </ul>
             )}
             {!mobile && <Button />}
+
+            {/* add the menu-icon on a smaleer screen,  */}
+            {mobile && (
+                <div className="sidebar-toggle">
+                    {sidebar ? (
+                        <Icons.FaTimes className="sidebar-toggle-logo"
+                        onClick={() => setSidebar(!sidebar)} />
+                    ) : (
+                        <Icons.FaBars className="sidebar-toggle-logo" onClick={() => setSidebar(!sidebar)}/>
+                    )}
+                    </div>
+                    )}
+                </div>
+            )}
         </nav>    
     </>
   );
