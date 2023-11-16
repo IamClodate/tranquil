@@ -6,7 +6,19 @@ import Button from "./Button";
 import { navItems } from "./NavItems.js";
 
 function Navbar() {
-    const [mobile, setMobile] = useState(false);
+   const [mobile, setMobile] = useState(false);
+    
+   useEffect(() => {
+    const handleResize = () => {
+        if(window.innerWidth < 1065) {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
+    }
+
+    window.addEventListener("resize",handleResize)
+   }, [])
 
 
   return (
@@ -30,7 +42,7 @@ function Navbar() {
                 })}
                 </ul>
             )}
-            <Button />
+            {!mobile && <Button />}
         </nav>    
     </>
   );
