@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <>
         <nav className="navbar">
-            <Link to="/" className="navbar-logo">
+            <Link to="/" className="navbar-logo" onClick={() => setSidebar(false)}>
                 <Icons.FaPiedPiper />
                 Tranquil
             </Link>
