@@ -6,3 +6,15 @@
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
 }
+
+.home,
+.contactus,
+.products,
+.services,
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 4rem;
+}
