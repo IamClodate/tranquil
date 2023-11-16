@@ -6,6 +6,9 @@ import Button from "./Button";
 import { navItems } from "./NavItems.js";
 
 function Navbar() {
+    const [mobile, setMobile] = useState(false);
+
+
   return (
     <>
         <nav className="navbar">
@@ -13,7 +16,8 @@ function Navbar() {
                 <Icons.FaPiedPiper />
                 Tranquil
             </Link>
-            <ul className="nav-items">
+            {!mobile &&(
+                <ul className="nav-items">
                 {navItems.map(item => {
                     return (
                     <li key={item.id} className={item.nName}>
@@ -24,7 +28,8 @@ function Navbar() {
                     </li>
                     );
                 })}
-            </ul>
+                </ul>
+            )}
             <Button />
         </nav>    
     </>

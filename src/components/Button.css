@@ -1,5 +1,5 @@
 .btn {
-    background: tomato;
+    background: green;
     border: none;
     border-radius: 5px;
     padding: 6px 16px;
@@ -14,7 +14,7 @@
 
 .btn:hover {
     background: whitesmoke;
-    color: tomato;
+    color: green;
 }
 
 a {
