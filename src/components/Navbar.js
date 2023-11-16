@@ -64,7 +64,7 @@ function Navbar() {
                 )}
         </nav> 
 
-        <div className="sidebar">
+        <div className={sidebar ? "sidebar active" :"sidebar"}>
             <ul className="sidebar-items">
                     {navItems.map((item )=> {
                         return (

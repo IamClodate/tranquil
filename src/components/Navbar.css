@@ -64,7 +64,12 @@
     height: 90vh;
     position: absolute;
     top: 10vh;
+    left: -100%;
     transition: 0.3s all ease-in-out;
+}
+
+.sidebar.active {
+    left: 0;
 }
 .sidebar-items {
     font-size: 1.2rem;
@@ -99,4 +104,9 @@
 
 .sidebar-item a:hover {
     background: green;
+}
+
+.sidebar .btn {
+    margin-top: 2.4rem;
+    width: 100%;
 }
