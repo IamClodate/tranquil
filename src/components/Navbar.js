@@ -65,7 +65,7 @@ function Navbar() {
         </nav> 
 
         <div className="sidebar">
-            <ul className="nav-items">
+            <ul className="sidebar-items">
                     {navItems.map((item )=> {
                         return (
                         <li key={item.id} className={item.sName}>

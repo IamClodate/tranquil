@@ -51,8 +51,8 @@ export const navItems = [
     },
     {
         id: 7,
-        title: "Sign",
-        path: "./sign",
+        title: "Signup",
+        path: "./signup",
         nName: "nav-item",
         sName: "sidebar-item",
         icon: <Icons.FaHome />

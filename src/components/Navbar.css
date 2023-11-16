@@ -57,3 +57,16 @@
     font-size: 2.3rem;
     color: white;
 }
+
+.sidebar {
+    width: 16rem;
+    background: green;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    transition: 0.3s all ease-in-out;
+}
+.sidebar-items {
+    text-decoration: none;
+    color: greenyellow;
+}
