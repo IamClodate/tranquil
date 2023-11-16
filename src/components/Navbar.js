@@ -21,6 +21,7 @@ function Navbar() {
             setMobile(true);
         } else {
             setMobile(false);
+            setSidebar(false);
         }
     }
 
