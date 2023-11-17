@@ -76,6 +76,14 @@
     align-items: center;
     justify-content: space-around;
     z-index: 2;
+    font-family: "Merianda";
  }
 
- h1
+ h1 {
+    font-size: 6em;
+ }
+
+ p {
+    justify-self: flex-end;
+    font-size: 2em;
+ }

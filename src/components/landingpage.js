@@ -22,8 +22,11 @@ const landingpage = () => {
 
             </div>
 
+            <div className="home-btn">Explore More</div>
+
         </div>
 
+    
     
   )
 }
