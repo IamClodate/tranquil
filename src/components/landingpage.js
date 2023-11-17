@@ -14,16 +14,17 @@ const landingpage = () => {
                 <div></div>
                 <div></div>
             </div>
+        </div>
 
             <div className="home-text">
                 <h1>The Bubu Island</h1>
-                <p>Come live out your ideal vacationb with us</p>
+                <p>Come live out your ideal vacation with us</p>
 
             </div>
 
         </div>
 
-    </div>
+    
   )
 }
 
